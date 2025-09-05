@@ -1,0 +1,86 @@
+\begin{abstract}
+Black hole thermodynamics, at the intersection of general relativity, quantum field
+theory, and statistical mechanics, provides a unique window into the quantum structure of spacetime. In this work, we present a comprehensive and rigorous analysis
+of the quantum-corrected thermodynamics of AdS black holes in ModMax-dRGT-like massive gravity, a theory that unifies nonlinear electrodynamics (ModMax) with a
+ghost-free massive graviton sector (dRGT). We systematically incorporate both logarithmic and exponential quantum corrections to the Bekenstein-Hawking entropy,
+motivated by one-loop quantum gravity effects and non-perturbative phenomena. We derive and analyze the full set of
+thermodynamic quantities, entropy, temperature, free energies, internal energy, specific heat, and thermodynamic volume, using both analytic and numerical methods.
+Representative parameter values are chosen on the basis of physical, observational, and theoretical grounds, and all calculations are accompanied by clear reasoning. The results
+are illustrated with high-quality plots generated from the figures directory, and each
+plot is interpreted in the context of black hole stability, phase structure, and quantum
+microstructure. Our findings reveal that quantum corrections play a crucial role in stabilizing small black holes, regularizing entropy, and modifying the temperature and free
+energy profiles, with significant implications for the microphysics and phase transitions
+of black holes in modified gravity. This work provides a robust framework for future
+studies of quantum gravity effects, phase transitions, and holographic phenomena in
+black hole thermodynamics
+\end{abstract}
+
+%\pacs{04.30.Tv, 04.50.Kd}
+\keywords{Black Hole Thermodynamics; ModMax-dRGT-like massive gravity; Entropy; First law of Thermodynamics}
+
+\maketitle
+\section{Introduction}
+
+{\color{violet} Please finalise the introduction.}
+
+{\color{red} Use these papers to write an introduction to your own. \\ 1. https://arxiv.org/abs/2501.15629 \\ 2. https://arxiv.org/abs/2407.10946 \\
+3. https://arxiv.org/pdf/2507.05864\\
+4.}
+
+In recent years, the study of black holes has evolved into a central theme in theoretical physics, owing not only to their gravitational implications but also to their profound thermodynamic behavior. The formulation of black hole thermodynamics, at the crossroads of general relativity, quantum mechanics, classical thermodynamics, and statistical mechanics, has uncovered deep insights into the nature of spacetime, entropy, and information. A pivotal development in this direction was initiated by Bekenstein, who in 1973 proposed that black holes possess entropy proportional to the area of their event horizon, thereby treating them as legitimate thermodynamic entities \cite{PhysRevD.7.2333}. This proposal sought to resolve the apparent violation of the second law of thermodynamics arising from the irreversible loss of matter into a black hole by assigning entropy to the black hole itself.
+
+Building upon Bekenstein’s conjecture, Hawking in 1974 demonstrated that black holes emit thermal radiation due to quantum effects near the horizon, now known as Hawking radiation \cite{PhysRevLett.105.203901,Bekenstein:1972tm}. This radiation, characterized by a temperature proportional to the surface gravity, implies that black holes can lose mass and energy, eventually evaporating completely. Hawking further established the irreducibility of the event horizon area under classical processes \cite{PhysRevD.7.2333}, which led to the formulation of the four laws of black hole thermodynamics \cite{Bardeen:1973gs}. Among these, the Bekenstein-Hawking area law, $S = \frac{A}{4}$, stands as a cornerstone, relating the entropy of a black hole to its horizon area.
+
+While the area law holds for large black holes in thermal equilibrium, it becomes inadequate for small black holes or near-extremal configurations where quantum fluctuations dominate. This necessitates corrections to the entropy formula, typically beginning with a logarithmic term that emerges universally from one-loop quantum corrections \cite{Ahluwalia\_2017,Fernando:2006gh}. Such corrections, derived via various techniques including quantum field theory in curved spacetimes, string theory, and loop quantum gravity, have been shown to significantly alter thermodynamic stability, temperature, specific heat, and other thermodynamic parameters \cite{Upadhyay:2018gee,10.1093/ptep/pty145,Wald:1999vt,Upadhyay:2018vfu,UPADHYAY2017130,doi:10.1142/S0218271823501109}.
+
+In addition to logarithmic terms, recent developments have emphasized the role of **exponential corrections** to black hole entropy, particularly arising from non-perturbative quantum gravitational effects. These corrections manifest in the entropy expression as
+
+$$
+S = S_{\mathrm{BH}} + \alpha \log S_{\mathrm{BH}} + \gamma e^{-\delta S_{\mathrm{BH}}},
+$$
+
+where the coefficients $\gamma$ and $\delta$ encapsulate contributions from instantons, brane-world effects, and non-local entanglement \cite{Banerjee:2008gc,Solodukhin:2011gn}. Within the Euclidean path integral approach, such exponential corrections reflect contributions from subdominant saddle points with finite Euclidean action, representing quantum tunneling between topologically distinct vacua. The incorporation of these terms is crucial for a complete description of the thermodynamic behavior, especially when black holes are embedded in theories with non-linear matter couplings such as Euler-Heisenberg nonlinear electrodynamics (NED) \cite{Heisenberg:1936nmg,Weisskopf:1936hya,Schwinger:1951nm} and Dirac-Born-Infeld (DBI) theory \cite{Gibbons:2001sx,Born:1934gh}.
+
+In particular, Gursel et al. \cite{Gursel:2025wan} have studied exponential entropy corrections in the context of Euler–Heisenberg NED by modeling the black hole as a thermodynamic system composed of discrete microstates. By enforcing constraints on total energy and particle number and maximizing entropy under these conditions, they derived a correction term exhibiting exponential dependence, thereby linking microstate counting with non-perturbative quantum effects. These results demonstrate that quantum corrections arising from strong-field effects or topologically nontrivial configurations not only affect the entropy but also modify associated thermodynamic quantities such as enthalpy, free energies, and heat capacity.
+
+Furthermore, quantum-corrected black hole thermodynamics has been investigated for various black hole spacetimes—ranging from Schwarzschild-Beltrami-de Sitter black holes to dilatonic and AdS black holes—with corrections showing diverse impacts on stability and phase behavior \cite{Pourhassan:2017rie,Upadhyay:2018gee,cmp/1103922135}. For instance, first-order corrections are often found to destabilize small black holes, while second-order or exponential corrections can restore stability \cite{256e337715504f60b40bfb83a385bbbb,Gogoi\_2024}. Additionally, the presence of external fields and exotic matter components such as quintessence has been shown to induce phase transitions reminiscent of van der Waals fluids \cite{Chamblin:1999hg,Pourhassan:2016atz,Nam:2018uvc}. These findings also extend into the holographic domain via the AdS/CFT correspondence, where boundary thermodynamics reflects bulk gravitational phenomena \cite{Kubiznak:2012wp,Shen:2005nu,Sahay:2010tx}.
+
+Recent investigations have also incorporated generalized entropy frameworks like Rényi and Tsallis entropies \cite{Tsallis:2009zex,Rényi1959}, to account for the non-additivity and long-range interactions inherent in gravitational systems. For instance, Czinner et al. \cite{Czinner:2025koi} argued that the Rényi entropy provides an additive yet non-extensive generalization of the Bekenstein-Hawking entropy, maintaining consistency with the zeroth law of thermodynamics and capturing quantum corrections through a deformation parameter $\lambda$. A black hole model constructed within this framework exhibits a Hawking temperature that coincides with the thermodynamic temperature derived from the Rényi formalism, particularly when embedded in a Kiselev-like background with anisotropic fluids.
+
+In light of these developments, it becomes imperative to investigate the full thermodynamic structure of black holes incorporating higher-order and exponential entropy corrections. This paper focuses on deriving the corrected expressions for thermodynamic quantities such as enthalpy, Helmholtz free energy, Gibbs free energy, internal energy, specific heat, and thermodynamic volume by considering black holes subject to thermal fluctuations around equilibrium. Through this approach, we aim to deepen our understanding of black hole stability, microstructure, and phase behavior under quantum-corrected entropy frameworks.
+
+Throughout this work, we adopt natural units by setting $G = c = \hbar = k_B = 1$.
+
+\section{AdS Black Hole Solutions in ModMax-dRGT-like massive gravity}
+\label{sec2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Basic Thermodynamic Properties} \label{section3}
+
+
+
+    
+\section{Conclusion}
+
+\section*{Appendix}
+
+\section*{Acknowledgment}
+ DJG acknowledges the contribution of the COST Action CA21136  -- ``Addressing observational tensions in cosmology with systematics and fundamental physics (CosmoVerse)". 
+
+\section*{Declaration of competing interest}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this manuscript.
+
+
+\section*{Data Availability Statement}
+There are no new data associated with this article.
+
+%\bibliographystyle{apsrev}
+\bibliography{refs}
+\end{document}
+
+https://arxiv.org/abs/2504.12014
+
+https://arxiv.org/pdf/2505.17172
