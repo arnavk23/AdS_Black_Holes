@@ -6,9 +6,8 @@ This project investigates the corrected thermodynamics of AdS black holes in Mod
 Authors: Dhruba Jyoti Gogoi, Arnav Kapoor
 
 ## Structure
-- `ModMax_dRGT_BH_Thermo_Notes.md`: Main scientific notes and draft
-- `Section_II_AdS_BH_Solutions.md`: AdS black hole solutions in ModMax-dRGT-like massive gravity
-- `Thermo_Calculations.ipynb`: Notebook for thermodynamic calculations and plots
+- `latex/`: Main scientific notes and draft. AdS black hole solutions in ModMax-dRGT-like massive gravity
+- `notebooks/`: Notebook for thermodynamic calculations and plots
 - `figures/`: All generated figures and plots
 
 ## Goals
